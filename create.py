@@ -927,7 +927,7 @@ logo=("""
           [green_yellow]THIS [dark_olive_gre]TOOLS[pale_green1] IS[dark_sea_green…] NOT FOR[bold red] FREE !!!
 """)
 ll=str([hari,tanggal])
-hx=("""  [bold green1]OWNER/ADMIN[medium_purple1]   ➙ [cyan][bold]HANZY
+hx=("""  [bold green1]OWNER/ADMIN[medium_purple1]   ➙ [cyan][bold]ADMIN
   [bold green1]TOOL TYPE[medium_purple1]     ➙ [green][bold]AUTOMATIC CREATE FACEBOOK/PAID
   [bold green1]STATUS[medium_purple1]        ➙ [green][bold]ONLINE
   [bold green1]TOOLS [medium_purple1]         ➙ [green][bold]UPDATED
