@@ -7114,7 +7114,6 @@ def main():
     print(f"       {BG}                                                             {RW} ")
     print(f"       {BG}                                                             {RW} ")
     print(f"       {BG}   {Q}○ {Z1}7/Q {white}Custom Comments   {blue}       ◆{Z1} Page or Account {RW}{BG}        {RW} ")
-    print(f"       {BG}   {Q}○ {Z1}8/Q {white}Reaction   {blue}       ◆{Z1} Page or Account {RW}{BG}        {RW} ")
     print(f"       {BG}                                                             {RW} ")
     print(f"       {BG}                                                             {RW} ")
     choice = input(f"       {BG} {Q} ➪ {Q}ENTER YOUR CHOICE {green}: {BG1} {RW}").strip() 
@@ -7133,8 +7132,6 @@ def main():
         update()
     if choice == '7' or choice == 'G':
         perform_comment_fast()
-    if choice == '8' or choice == 'G':
-        perform_reaction_fast()
 
     if choice == '25' or choice == 'Z':
         pass
@@ -7152,3 +7149,4 @@ if __name__ == "__main__":
     
     
     
+
