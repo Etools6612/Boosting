@@ -7132,9 +7132,6 @@ def main():
         update()
     if choice == '7' or choice == 'G':
         perform_reaction_fast()
-    if choice == '8' or choice == 'G':
-        
-
     if choice == '25' or choice == 'Z':
         pass
     else:
@@ -7151,3 +7148,4 @@ if __name__ == "__main__":
     
     
     
+
