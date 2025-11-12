@@ -4628,6 +4628,8 @@ def main():
     print(f'''  {blue}  │   {white}     3      {blue} │   {F1}   Auto Facebook Creator {blue}    |    {green}        Actvive        {blue}   │ ''')
     print(f'''   {blue} │    {white}    4      {blue} │      {F1}    Auto Share V2     {blue}    │        {green}    Active          {blue}  │''')
     print(f'''   {blue} │    {white}    5      {blue} │     {F1}     Extractor        {blue}     │        {green}    Active          {blue}  │''')
+    print(f'''   {blue} │    {white}    6      {blue} │     {F1}     Live checker        {blue}     │        {green}    Active          {blue}  │''')
+    print(f'''   {blue} │    {white}    7      {blue} │     {F1}     Automatic remover      {blue}     │        {green}    Active          {blue}  │''')
     print(f''' {blue}   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ ''')
     choice = input(f"{white} CHOOSE : ").strip()
     if choice == '1':
@@ -4640,6 +4642,10 @@ def main():
         main2()
     if choice == '5':
         extraction()
+    if choice == '6':
+        fetch_account_info(file_options)
+    if choice == '7':
+        check()
     if choice == '9':
         clear_text_files()
 
@@ -4653,3 +4659,4 @@ if __name__ == "__main__":
     
     
     
+
