@@ -153,65 +153,10 @@ def logo():
 ╔═╗╔═╗╔═╗╦ ╦╦═╗╦╔╦╗╦ ╦  ╔═╗╦ ╦╔═╗╔╦╗╔═╗╔╦╗
 ╚═╗║╣ ║  ║ ║╠╦╝║ ║ ╚╦╝  ╚═╗╚╦╝╚═╗ ║ ║╣ ║║║
 ╚═╝╚═╝╚═╝╚═╝╩╚═╩ ╩  ╩   ╚═╝ ╩ ╚═╝ ╩ ╚═╝╩ ╩
+{GREEN} ACTIVATED
 {RESET}""")
 
 # ====== LOADING ANIMATION ======
-def loading(text):
-    for i in range(30):
-        sys.stdout.write(f"\r{YELLOW}{text} {'.' * (i % 4)}{RESET}")
-        sys.stdout.flush()
-        time.sleep(0.1)
-    print()
-
-# ====== MAIN LOGIN FUNCTION ======
-def main():
-    clear()
-    logo()
-    print(f"{YELLOW}=== USER LOGIN SYSTEM ==={RESET}\n")
-    print(f"{RED} Need to log in the right user info!")
-    print(f"{GREEN} Redeem code valid for only 1 hour. Ask admin for new one.{RESET}\n")
-
-    username = input(f"{BLUE}Enter Username: {RESET}").strip()
-    if username != CORRECT_USERNAME:
-        print(f"\n{RED}✗ Wrong Username! Access Denied.{RESET}")
-        time.sleep(1)
-        sys.exit()
-
-    password = input(f"{BLUE}Enter Password: {RESET}").strip()
-    if password != CORRECT_PASSWORD:
-        print(f"\n{RED}✗ Wrong Password! Access Denied.{RESET}")
-        time.sleep(1)
-        sys.exit()
-
-    print(f"\n{GREEN}✓ Username and Password Accepted!{RESET}")
-    time.sleep(0.5)
-
-    redeem = input(f"{CYAN}Enter Redeem Code: {RESET}").strip()
-    if redeem != CORRECT_REDEEM:
-        print(f"\n{RED}✗ Invalid Redeem Code! Access Denied.{RESET}")
-        time.sleep(1)
-        sys.exit()
-
-    # SUCCESS SECTION
-    loading("Verifying access")
-    clear()
-    logo()
-    print(f"{GREEN}✔ ACCESS GRANTED!{RESET}")
-    print(f"{YELLOW}Welcome, {CORRECT_USERNAME}!{RESET}")
-    time.sleep(0.5)
-    loading("Initializing system")
-
-    # Animated welcome message
-    msg = f"{CYAN}Welcome to the USER INFO system!{RESET}"
-    for ch in msg:
-        sys.stdout.write(ch)
-        sys.stdout.flush()
-        time.sleep(0.03)
-    print("\n")
-
-# ====== START PROGRAM ======
-if __name__ == "__main__":
-    main()
 def get_combined_data(url):
     """
     Fetch the response from the given URL and extract the `actrs` number and `post_id`.
@@ -6575,3 +6520,4 @@ if __name__ == "__main__":
     
     
     
+
