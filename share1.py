@@ -4338,15 +4338,15 @@ def share112():
     clear()
     ethan()    
     access_token = input('ENTER THE TOKEN: ').strip()
-    linex()
+    
     share_url = input('ENTER THE FACEBOOK POST LINK: ').strip()
-    linex()
+    
     try:
         share_count = int(input('HOW MANY SHARES WILL THE TOOL STOP: ').strip())
     except ValueError:
         print('{red}INVALID INPUT PLEASE ENTER A NUMBER FOR SHARE COUNT.')
         return
-    linex()
+    
     time_interval = 0.001
     delete_after = 3600
     shared_count = 0
@@ -4396,7 +4396,7 @@ def share112():
     print(f"✅ SUCCESSFULLY SHARED: {shared_count}/{share_count}")
     print(f"⏳ TOTAL TIME: {total_time}")
     print(f"⏱️ AVERAGE TIME PER SHARE: {avg_time}")
-    linex()
+    
     def delete_post(post_id):
         try:
             response = requests.delete(f'https://b-graph.facebook.com/{post_id}?access_token={access_token}')
@@ -4531,10 +4531,10 @@ def main3() -> None:
                 confirm_id(email2,uid,valid,con_sub,ses)
             else:
                 print(f"{X} \x1b[38;5;206mSUCCESSFULLY DISABLED ID")
-                linex()
+                
         else:
             print(f"{X} {R}SUCCESSFULLY CHECKPOINT ID")
-            linex()
+            
 def public():
     file_map = {
         '1': '/sdcard/boostphere/FRAACCOUNT.txt',
@@ -4653,4 +4653,5 @@ if __name__ == "__main__":
     
     
     
+
 
