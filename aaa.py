@@ -7,59 +7,7 @@ white="\x1b[1;97m";yelloww="\033[1;33m";green="\x1b[38;5;49m";G0="\x1b[38;5;155m
 style=f"\033[1;37m[\x1b[38;5;46m◆\033[1;37m]"
 stylee=f"\033[1;37m[\033[1;31m!\033[1;37m]"
 styleee=f"\033[1;37m[\x1b[38;5;46m?\033[1;37m]"
-#▬▭▬▭▬▭▬▭[INSTALL]▬▭▬▭▬▭▬▭#
-import os,time
-os.system("clear" if os.name == "posix" else "cls")
-print(f'{style} \x1b[38;5;46mINSTALLING MISSING MODULES...')
-print(f"\x1b[38;5;160m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[1;37m")
-os.system('pip uninstall requests chardet urllib3 idna certifi -y;pip install chardet urllib3 idna certifi requests bs4')
-os.system('pip install pycurl > /dev/null')
-os.system("pip install faker")
-os.system("pip install pyotp")
-try:
-    import requests
-except ImportError:
-    print(f'{style} \x1b[38;5;46mINSTALLING REQUESTS...')
-    print(f"\x1b[38;5;160m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[1;37m")
-    os.system('pip install requests')
-try:
-    import concurrent.futures
-except ImportError:
-    print(f'{style} \x1b[38;5;46mINSTALLING FUTURES...')
-    print(f"\x1b[38;5;160m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[1;37m")
-    os.system('pip install futures')
-    time.sleep(1.5)
-    os.system('git pull')
-    os.system('pkg install curl')
-try:
-    import requests 
-except ImportError:
-    print(f'{style} \x1b[38;5;46mINSTALLING REQUESTS...')
-    os.system('pip install requests')
-try:
-    import concurrent.futures
-except ImportError:
-    print(f'{style} \x1b[38;5;46mINSTALLING FUTURES...')
-    print(f"\x1b[38;5;160m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[1;37m")
-    os.system('pip install futures')
-try:
-    import mechanize
-except ImportError:
-    print(f'{style} \x1b[38;5;46mINSTALLING MECHANIZE...')
-    print(f"\x1b[38;5;160m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[1;37m")
-    os.system('pip install mechanize > /dev/null')
-try:
-    import aiohttp
-except ImportError:
-    print(f'{style} \x1b[38;5;46mINSTALLING AIOHTTP...')
-    print(f"\x1b[38;5;160m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[1;37m")
-    os.system('pip install aiohttp')
-try:
-    import asyncio
-except ImportError:
-    print(f'{style} \x1b[38;5;46mINSTALLING ASYNCIO...')
-    print(f"\x1b[38;5;160m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[1;37m")
-    os.system('pip install asyncio')
+
 #▬▭▬▭▬▭▬▭[IMPORT]▬▭▬▭▬▭▬▭#
 import os,sys,re,time,json,mechanize,asyncio,aiohttp,requests,urllib.parse,bs4,string,faker,fake_email,random,uuid,hashlib,subprocess,platform,marshal,zlib,base64,locale,threading
 from os import path
