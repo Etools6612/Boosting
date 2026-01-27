@@ -24,6 +24,7 @@ import concurrent.futures
 from concurrent.futures import ThreadPoolExecutor as tred
 import urllib3
 import socket
+import mechanize
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 socket.setdefaulttimeout(10)
 #▬▭▬▭▬▭▬▭[PERMISSION OF SDCARD]▬▭▬▭▬▭▬▭#
