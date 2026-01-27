@@ -9,7 +9,6 @@ stylee=f"\033[1;37m[\033[1;31m!\033[1;37m]"
 styleee=f"\033[1;37m[\x1b[38;5;46m?\033[1;37m]"
 
 #▬▭▬▭▬▭▬▭[IMPORT]▬▭▬▭▬▭▬▭#
-import os,sys,re,time,json,mechanize,asyncio,aiohttp,requests,urllib.parse,bs4,string,faker,fake_email,random,uuid,hashlib,subprocess,platform,marshal,zlib,base64,locale,threading
 from os import path
 from urllib.request import Request,urlopen
 from faker import Faker
